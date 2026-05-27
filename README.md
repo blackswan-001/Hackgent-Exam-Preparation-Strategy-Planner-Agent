@@ -118,7 +118,7 @@ API key is set directly in `agent.py`. To use `.env` instead:
 
 ```bash
 # .env
-GEMINI_API_KEY=your_key_here
+GROQ_API_KEY=your_key_here
 ```
 
 Then in `agent.py`, the `os.environ.get()` call picks it up automatically.
@@ -141,3 +141,43 @@ This agent intentionally does NOT include:
 
 These are excluded to maintain hackathon-grade reliability.
 Controlled scope = controlled quality.
+
+## 🧪 Design Decisions
+> Deterministic vs LLM split
+
+ Scheduling is intentionally non-LLM to avoid:
+
+  - Hallucinated time allocation
+  - Inconsistent outputs across runs
+  - Non-reproducible behavior
+  - LangGraph usage
+
+> Chosen over linear chains because:
+
+  - Planning is inherently stateful
+  - Enables future revision loops
+  - Improves observability of transitions
+  - Confidence weighting system
+
+> Maps subjective user input into structured planning logic:
+
+  - High confidence → reinforcement efficiency bias
+  - Low confidence → increased allocation weight
+
+## ⚠️ Known Limitations
+- No persistent memory across sessions
+- No calendar integration or external syncing
+- LLM output variability in explanations
+- Extreme constraint inputs reduce optimization quality
+
+Mitigation: deterministic core guarantees structural stability.
+
+## 🧠 System Summary
+
+This system is intentionally designed as:
+
+A deterministic planning engine with an LLM-powered explanation layer.
+
+Not:
+
+A prompt-based AI scheduler.
