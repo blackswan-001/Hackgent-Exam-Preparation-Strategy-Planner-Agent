@@ -181,3 +181,16 @@ A deterministic planning engine with an LLM-powered explanation layer.
 Not:
 
 A prompt-based AI scheduler.
+
+<img width="1280" height="574" alt="image" src="https://github.com/user-attachments/assets/9df11752-1b54-4d36-a301-1ea36782dd8c" />
+
+<img width="1280" height="584" alt="image" src="https://github.com/user-attachments/assets/8a3e2b16-3918-48ba-a898-fb948b62e7fc" />
+
+<img width="1280" height="662" alt="image" src="https://github.com/user-attachments/assets/deb5de69-dc89-4dec-ac4a-93c96a6f772b" />
+
+<img width="1280" height="578" alt="image" src="https://github.com/user-attachments/assets/8aa8944d-b719-4b0c-84c2-c3b08d7d9c7e" />
+
+<img width="1280" height="596" alt="image" src="https://github.com/user-attachments/assets/96450e16-1405-4082-84a2-d3271e38ca75" />
+
+<img width="1280" height="626" alt="image" src="https://github.com/user-attachments/assets/ab99303f-0dcc-47fa-a411-998f9f8f922f" />
+
